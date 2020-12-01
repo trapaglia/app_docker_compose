@@ -10,7 +10,8 @@ class QuickstartUser(HttpUser):
     @task(3)
     def predict(self):
         for i in range(4):
-            self.client.post('/predict', params={'text': 'dolar %d'%i})
+            self.client.post('/predict', params={'text': 'Esto anda muy bien!'})
+            self.client.post('/predict', params={'text': 'Esto anda re mal'})
 
     def on_start(self):
         pass

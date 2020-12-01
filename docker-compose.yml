@@ -28,7 +28,7 @@ services:
 
   model:
     image: ml_service
-    container_name: ml_service
+    # container_name: ml_service
     build:
       context: ./model
     command: "python3 /src/ml_service.py"
